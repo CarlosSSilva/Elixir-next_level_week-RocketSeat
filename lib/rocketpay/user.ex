@@ -4,7 +4,7 @@ defmodule Rocketpay.User do
 
   alias Ecto.Changeset
 
-  @primary_key {:id, :binary_id, autogenerate: true}
+  @primary_key {:id, :binary_id, autogenerate: true} #usando UUID
 
   @required_params [:name, :age, :email, :password, :nickname]
 
