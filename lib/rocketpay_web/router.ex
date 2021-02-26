@@ -9,8 +9,11 @@ defmodule RocketpayWeb.Router do
     pipe_through :api
 
     get "/:filename", WelcomeControlloer, :index
-
+    #criação de conta
     post "/users", UsersController, :create
+    #adição e retirada de value in balance
+    post "/accounts/:id/deposit", AccountsController, :deposit
+    post "/accounts/:id/withdraw", AccountsController, :withdraw
   end
 
   # Enables LiveDashboard only for development
