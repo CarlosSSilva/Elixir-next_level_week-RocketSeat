@@ -5,7 +5,7 @@
 Estudando o desenvolvendo de um aplicativo de pagamento, parecido com PicPay, usando Elixir Werlang que suporta grande numero de requisições, sendo uma linguagem compilada → (Werlang, usada em telecomunicações), com o proposito de construir aplicações web robustas para múltiplas requisições. No caso para desenvolver uma aplicação parecida com a do PicPay.
 Usando PHX server e Docker(Postgress).
 
---------------------------------------------------------////////////////////////////////-----------------------------------------------------------------------
+--------------------------------------------------------////////////////////////////////----------------------------------------------------------------------
 
 
 To start your Phoenix server:
