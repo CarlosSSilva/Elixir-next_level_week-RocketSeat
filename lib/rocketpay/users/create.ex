@@ -1,6 +1,6 @@
 defmodule Rocketpay.Users.Create do
   alias Ecto.Multi
-  alias Rocketpay.{Account, Repo, User}
+  alias Rocketpay.{Accounts, Repo, User}
 
   def call(params) do
     #criando conta e usuario ao mesmo tempo
@@ -25,7 +25,7 @@ end
   defp account_changeset(user_id) do
     params = %{user_id: user_id, balance: "0.00"}
 
-    Account.changeset(params)
+    Accounts.changeset(params)
   end
 
   defp preload_data(repo, user) do
