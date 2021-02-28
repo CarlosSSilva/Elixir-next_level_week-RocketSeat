@@ -7,8 +7,7 @@ O ELIXIR, é uma linguagem funcional executada em máquina virtual, que fornece 
 Para este repositório é usado no desenvolvimento de uma aplicação com funcionalidades como a do PICPAY.
 Usando PHX server e Docker (Postgress).
 
-Deposit - Withdraw - Transaction - Multi Merge (Dynamic Name) - Transaction View (render in API).
-API pronta, faltando encriptação.
+Deposit - Withdraw - Transaction - Transaction View (render in API) - Tests - Encripitação Basica (API pronta)
 
 
 --------------------------------------------------------////////////////////////////////----------------------------------------------------------------------
