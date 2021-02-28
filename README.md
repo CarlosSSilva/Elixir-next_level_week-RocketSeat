@@ -2,8 +2,14 @@
 
 #NLW - Elxir - RocketSeat (back end - Front end)
 
-Estudando o desenvolvimento de um aplicativo de pagamento, parecido com PicPay, usando Elixir Werlang que suporta grande numero de requisições, sendo uma linguagem compilada → (Werlang, usada em telecomunicações), com o proposito de construir aplicações web robustas para múltiplas requisições. No caso para desenvolver uma aplicação parecida com a do PicPay.
-Usando PHX server e Docker(Postgress).
+Estudando o desenvolvimento de uma API de pagamento como PicPay, usando Elixir Erlang.
+O ELIXIR, é uma linguagem funcional executada em máquina virtual, que fornece aplicações tolerantes a falhas (com ajuda de SUPERVISORS), que suporta grande número de requisições, com o propósito de construir aplicações web robustas para múltiplas requisições, podendo desenvolver tanto o Front-End como o Back-End (esse repositório é somente de Back-End), com chamadas e incorporações de funções facilitadas com o uso de PIPE OPERATOR e PATTERN MATCH. Também conta com MIX BUILD TOOL que facilita a criação de projetos, gerenciamentos e execução de testes, muito utilizada para resolver problemas de concorrência de dados (grande fluxo de dados).
+Para este repositório é usado no desenvolvimento de uma aplicação com funcionalidades como a do PICPAY.
+Usando PHX server e Docker (Postgress).
+
+Deposit - Withdraw - Transaction - Multi Merge (Dynamic Name) - Transaction View (render in API).
+API pronta, faltando encriptação.
+
 
 --------------------------------------------------------////////////////////////////////----------------------------------------------------------------------
 
