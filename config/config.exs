@@ -22,6 +22,10 @@ config :rocketpay, RocketpayWeb.Endpoint,
  migration_primary_key: [type: :binary_id],
  migration_foreign_key: [type: :binary_id]
 
+ config :rocketpay, :basic_auth, #auntentição / sendo usado uma variavel de ambiente para esconder credenciais
+  username: "Carlos",
+  password: "grande123" #para bloquear pastas e algumas rotas
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

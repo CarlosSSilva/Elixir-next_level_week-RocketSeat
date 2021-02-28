@@ -1,9 +1,16 @@
 defmodule RocketpayWeb.Router do
   use RocketpayWeb, :router
 
+  import Plug.BasicAuth #auntentição
+
   pipeline :api do
     plug :accepts, ["json"]
   end
+
+  pipeline :auth do #auntentição
+    plug :basic_auth, Application.compile_env(:rocketpay, :basic_auth)
+  end #pipeline = todas as rotas abaixo de :basic_auth obdecerão as regras de autenticação
+#plug = modulos para manipulas a conexão / que recebem e modificam
 
   scope "/api", RocketpayWeb do
     pipe_through :api
@@ -12,6 +19,11 @@ defmodule RocketpayWeb.Router do
     #criação de conta
     post "/users", UsersController, :create
     #adição e retirada de value in balance
+  end
+
+  scope "/api", RocketpayWeb do
+    pipe_through [:api, :auth] #auntentição pipiline
+
     post "/accounts/:id/deposit", AccountsController, :deposit
     post "/accounts/:id/withdraw", AccountsController, :withdraw
     post "/accounts/transaction", AccountsController, :transaction
